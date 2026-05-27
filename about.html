@@ -3,32 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Over Hassan Lammou | FIFA Makelaar & Jeugdmentor – Breda</title>
-  <meta name="description" content="Ontdek het verhaal van Hassan Lammou: FIFA-gecertificeerd voetbalmakelaar, oprichter van Noumidia Football Academy en toegewijde jeugdmentor in Breda." />
-  <meta name="keywords" content="Hassan Lammou, Over Hassan Lammou, FIFA makelaar, jeugdmentor Breda, voetbalcoach Breda, Noumidia Football Academy" />
+  <title>Over Hassan Lammou | Biografie & Filosofie – Breda</title>
+  <meta name="description" content="Ontdek het verhaal, de achtergrond en de unieke sportfilosofie van Hassan Lammou. FIFA-makelaar, jeugdmentor en oprichter van Noumidia Football Academy." />
+  <meta name="keywords" content="Hassan Lammou, over Hassan Lammou, biografie Hassan Lammou, voetbalfilosofie, jeugdmentor Breda, Noumidia Football Academy" />
   <meta name="author" content="Hassan Lammou" />
-  <meta property="og:title" content="Over Hassan Lammou | FIFA Makelaar & Jeugdmentor" />
-  <meta property="og:description" content="Ontdek het verhaal van Hassan Lammou: FIFA-gecertificeerd voetbalmakelaar, oprichter van Noumidia Football Academy en toegewijde jeugdmentor." />
+  <meta property="og:title" content="Over Hassan Lammou | Biografie & Filosofie – Breda" />
+  <meta property="og:description" content="Ontdek het verhaal, de achtergrond en de unieke sportfilosofie van Hassan Lammou." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Hassan Lammou",
-    "jobTitle": "FIFA Makelaar, Jeugdmentor & Voetbalcoach",
-    "url": "https://hassanlammou.github.io/",
-    "sameAs": [
-      "https://nl.linkedin.com/in/hassan-lammou-433406238",
-      "https://www.instagram.com/heshes076/",
-      "https://x.com/hassanlammou",
-      "https://www.youtube.com/@hassanlammou"
-    ],
-    "description": "Hassan Lammou is een FIFA-gecertificeerd voetbalmakelaar en jeugdmentor gevestigd in Breda, Nederland.",
-    "address": { "@type": "PostalAddress", "addressLocality": "Breda", "addressCountry": "NL" }
-  }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght=700;800&family=DM+Sans:wght=300;400;500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -83,18 +66,18 @@
     .nav-links a:hover { color: var(--blue); }
     .nav-links a.active { color: var(--blue); }
 
-    /* ── HEADER BREADCRUMB ── */
+    /* ── PAGE HEADER ── */
     .page-header {
       background: var(--black);
-      padding: 160px 80px 80px;
+      padding: 180px 80px 100px;
       position: relative;
       overflow: hidden;
     }
     .page-header::before {
       content: '';
       position: absolute;
-      top: -100px; right: -100px;
-      width: 500px; height: 500px;
+      top: -200px; right: -200px;
+      width: 600px; height: 600px;
       background: radial-gradient(circle, rgba(45,138,170,0.15) 0%, transparent 65%);
       pointer-events: none;
     }
@@ -106,9 +89,14 @@
       color: var(--white);
       line-height: 1.1;
       letter-spacing: -1px;
+      margin-bottom: 16px;
     }
     .page-header h1 span { color: var(--blue); }
-    .subtitle { color: rgba(255, 255, 255, 0.6); font-size: 16px; margin-top: 10px; }
+    .page-header p {
+      font-size: 18px;
+      color: rgba(255,255,255,0.65);
+      max-width: 600px;
+    }
 
     /* ── SECTIONS ── */
     section { padding: 90px 80px; }
@@ -123,7 +111,7 @@
     }
     h2 {
       font-family: 'Syne', sans-serif;
-      font-size: clamp(26px, 3vw, 40px);
+      font-size: clamp(28px, 3.5vw, 42px);
       font-weight: 800;
       line-height: 1.2;
       letter-spacing: -1px;
@@ -137,12 +125,12 @@
       margin-bottom: 40px;
     }
 
-    /* ── PROFILE & STORY ── */
+    /* ── STORY SECTION ── */
     .story-grid {
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 80px;
-      align-items: flex-start;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 60px;
+      align-items: start;
     }
     .story-text p {
       font-size: 16px;
@@ -150,11 +138,12 @@
       margin-bottom: 20px;
       line-height: 1.85;
     }
+    .story-text p strong { color: var(--black); }
     .story-image {
       position: relative;
       border-radius: 4px;
       overflow: hidden;
-      background: var(--gray);
+      border-bottom: 6px solid var(--blue);
     }
     .story-image img {
       width: 100%;
@@ -163,88 +152,67 @@
       filter: grayscale(10%);
     }
 
-    /* ── ACADEMY & COMMUNITY ── */
-    .split-section { background: var(--gray); }
-    .split-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-    }
-    .split-card {
-      background: var(--white);
-      padding: 40px;
-      border-radius: 4px;
-      border-top: 4px solid var(--blue);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-    }
-    .split-card h3 {
-      font-family: 'Syne', sans-serif;
-      font-size: 22px;
-      font-weight: 700;
-      margin-bottom: 16px;
-    }
-    .split-card p {
-      font-size: 15px;
-      color: var(--text-muted);
-      line-height: 1.8;
-    }
-
-    /* ── VALUES (CORE WAARDEN) ── */
-    .values-grid {
+    /* ── PHILOSOPHY (PILLARS) ── */
+    .philosophy-section { background: var(--gray); }
+    .pillars-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
-      margin-top: 20px;
+      margin-top: 40px;
     }
-    .value-card {
+    .pillar-card {
       background: var(--white);
-      border: 1px solid #e8e8e8;
-      padding: 35px 30px;
+      padding: 40px 30px;
       border-radius: 4px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
       position: relative;
     }
-    .value-card::before {
-      content: '';
+    .pillar-number {
+      font-family: 'Syne', sans-serif;
+      font-size: 48px;
+      font-weight: 800;
+      color: rgba(45,138,170,0.15);
       position: absolute;
-      top: 0; left: 0; width: 4px; height: 100%;
-      background: var(--blue);
+      top: 20px; right: 30px;
+      line-height: 1;
     }
-    .value-card h3 {
+    .pillar-card h3 {
       font-family: 'Syne', sans-serif;
       font-size: 18px;
       font-weight: 700;
-      margin-bottom: 12px;
       color: var(--black);
+      margin-bottom: 14px;
+      padding-right: 40px;
     }
-    .value-card p {
-      font-size: 14px;
+    .pillar-card p {
+      font-size: 14.5px;
       color: var(--text-muted);
       line-height: 1.75;
     }
 
-    /* ── CTA / CLOSING ── */
+    /* ── CTA SECTION ── */
     .cta-section {
       background: var(--black);
       color: var(--white);
       text-align: center;
       padding: 100px 40px;
+      position: relative;
     }
-    .cta-inner { max-width: 700px; margin: 0 auto; }
-    .cta-section h2 { color: var(--white); margin-bottom: 20px; }
+    .cta-section h2 { color: var(--white); margin-bottom: 16px; }
     .cta-section p {
-      color: rgba(255,255,255,0.7);
-      font-size: 17px;
-      margin-bottom: 35px;
-      line-height: 1.8;
+      color: rgba(255,255,255,0.65);
+      max-width: 600px;
+      margin: 0 auto 32px;
+      font-size: 16px;
     }
     .cta-btn {
       display: inline-block;
       background: var(--blue);
       color: var(--white);
-      padding: 15px 40px;
+      padding: 14px 36px;
       border-radius: 4px;
       text-decoration: none;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 500;
       letter-spacing: 0.5px;
       transition: background 0.2s, transform 0.2s;
@@ -315,16 +283,14 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
-      .page-header { padding: 140px 40px 60px; }
+      .page-header { padding: 140px 30px 60px; }
       section { padding: 60px 30px; }
-      .story-grid, .split-grid { grid-template-columns: 1fr; gap: 40px; }
-      .values-grid { grid-template-columns: 1fr; gap: 20px; }
+      .story-grid { grid-template-columns: 1fr; gap: 40px; }
+      .story-image { max-width: 500px; margin: 0 auto; }
+      .pillars-grid { grid-template-columns: 1fr; gap: 20px; }
       .footer-top { flex-direction: column; }
       nav { padding: 16px 20px; }
       .nav-links { gap: 16px; }
-    }
-    @media (max-width: 600px) {
-      .social-grid { grid-template-columns: repeat(5, 40px); }
     }
   </style>
 </head>
@@ -341,8 +307,8 @@
 
 <div class="page-header">
   <div class="header-inner">
-    <h1>Over <span>Hassan Lammou</span></h1>
-    <p class="subtitle">FIFA Makelaar, Jeugdmentor &amp; Voetbalcoach</p>
+    <h1>Het Verhaal Achter<br><span>Hassan Lammou</span></h1>
+    <p>Gedreven door passie, gevormd door ervaring. Een missie om de sportieve en persoonlijke potentie van jonge atleten volledig te benutten.</p>
   </div>
 </div>
 
@@ -350,84 +316,62 @@
   <div class="section-inner">
     <div class="story-grid">
       <div class="story-text">
-        <div class="section-label">Wie is hij?</div>
-        <h2>Gedreven door verandering</h2>
+        <div class="section-label">Mijn Achtergrond</div>
+        <h2>Bouwen aan de Toekomst van het Voetbal</h2>
         <div class="divider"></div>
         <p>
-          Hassan Lammou is een FIFA-gecertificeerd voetbalmakelaar, professionele jeugdcoach en toegewijde mentor gevestigd in Breda, Nederland. Met jarenlange ervaring in voetbalcoaching, talentontwikkeling en spelersvertegenwoordiging is Hassan Lammou uitgegroeid tot een van de meest vertrouwde namen in de jeugdsportontwikkeling in Breda. Hassan Lammou staat bekend om zijn eerlijke aanpak, zijn oprechte betrokkenheid bij jongeren en zijn vermogen om het beste uit elke atleet naar boven te halen.
-        </p>
-        
-        <div style="margin-top: 40px;" class="section-label">Het Verhaal</div>
-        <h2>De reis van Hassan Lammou</h2>
-        <p>
-          Hassan Lammou's reis begon met één eenvoudige overtuiging — voetbal kan levens veranderen. Van jongs af aan was Hassan Lammou gepassioneerd over het spel milestones en over de mensen die het spelen. Hij wilde niet alleen deel uitmaken van het voetbal. Hij wilde voetbal gebruiken om een echte verandering te maken in het leven van jonge mensen.
+          Mijn reis in de voetbalwereld begon vanuit een diepgewortelde passie voor het spel en de onvoorwaardelijke drang om impact te maken op het leven van jongeren. Als professioneel voetbalcoach en <strong>FIFA-gecertificeerd makelaar</strong> in Breda combineer ik de tactische en zakelijke kant van de sport met intensieve, persoonlijke begeleiding.
         </p>
         <p>
-          Door de jaren heen heeft Hassan Lammou hard gewerkt om zijn expertise op te bouwen. Hij behaalde zijn FIFA-makelaarslicentie, ontwikkelde his coachingvaardigheden en begon direct te werken met jonge atleten in Breda. Hij zag wat er ontbrak in de jeugdvoetbalontwikkeling en nam actie door Noumidia Football Academy op te richten. Een plek waar jong talent kan groeien in een professionele, ondersteunende en inclusieve omgeving.
+          Door de jaren heen merkte ik dat puur focussen op fysieke en technische vaardigheden niet meer genoeg is in het moderne voetbal. Jonge spelers hebben stabiliteit, een sterke mentaliteit en richting nodig. Dit inzicht leidde tot de oprichting van de <strong>Noumidia Football Academy</strong> in Breda. Een veilige, professionele en inclusieve haven waar topsporttraining hand in hand gaat met karaktervorming.
         </p>
         <p>
-          Vandaag de dag wordt Hassan Lammou erkend als een vertrouwde coach, een gerespecteerde FIFA-makelaar en een echte gemeenschapsleider in Breda en daarbuiten.
+          Naast mijn werkzaamheden op het veld en de transfertafels, zet ik mij als voorzitter van een jeugdstichting in Breda actief in voor maatschappelijke verandering. Ik geloof dat sport het ultieme middel is om jongeren te empoweren, discipline te leren en te transformeren tot de leiders van morgen.
         </p>
       </div>
       <div class="story-image">
-        <img src="Hassan Lammou.jpg" alt="Hassan Lammou - Professionele Jeugdcoach en FIFA Makelaar" />
+        <img src="Hassan Lammou.jpg" alt="Hassan Lammou - Voetbalcoach en Jeugdmentor" />
       </div>
     </div>
   </div>
 </section>
 
-<section class="split-section">
+<section class="philosophy-section">
   <div class="section-inner">
-    <div class="split-grid">
-      <div class="split-card">
-        <div class="section-label" style="margin-bottom: 8px;">De Academie</div>
-        <h3>Noumidia Football Academy</h3>
-        <p>
-          Als oprichter en directeur van Noumidia Football Academy heeft Hassan Lammou een omgeving gecreëerd waar jongeren uit alle achtergronden de kans krijgen om hun voetbaltalent te ontwikkelen. De academie richt zich niet alleen op technische en tactische vaardigheden, maar ook op de persoonlijke ontwikkeling van elke speler. Bij Noumidia Football Academy staat de atleet altijd centraal.
-        </p>
-      </div>
-      <div class="split-card">
-        <div class="section-label" style="margin-bottom: 8px;">Maatschappelijk</div>
-        <h3>Inzet voor de Gemeenschap</h3>
-        <p>
-          Naast his werk als coach en makelaar is Hassan Lammou ook voorzitter van een jeugdstichting in Breda. Via deze stichting zet Hassan Lammou zich actief in voor jongeren die extra ondersteuning nodig hebben. Hij gebruikt voetbal als middel voor educatie, sociale integratie en persoonlijke groei. Hassan Lammou gelooft dat elke jongere, ongeacht zijn of haar achtergrond, de kans verdient om te slagen.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="section-inner">
-    <div class="section-label">Kernwaarden</div>
-    <h2>Waar Hassan Lammou Voor Staat</h2>
+    <div class="section-label">Mijn Filosofie</div>
+    <h2>De Drie Kernpijlers van Succes</h2>
     <div class="divider"></div>
-    <div class="values-grid">
-      <div class="value-card">
-        <h3>Hard Werken</h3>
-        <p>Hard werken is de basis van elk succes. Zonder toewijding en maximale inzet kan talent zijn volledige potentieel niet bereiken.</p>
+    <div class="pillars-grid">
+      
+      <div class="pillar-card">
+        <div class="pillar-number">01</div>
+        <h3>Eerst de Persoon, Dan de Speler</h3>
+        <p>Een succesvolle carrière begint bij een sterke basis als mens. Respect, integriteit en mentale weerbaarheid vormen de fundering van elke atleet die ik train en begeleid.</p>
       </div>
-      <div class="value-card">
-        <h3>Integriteit</h3>
-        <p>Integriteit betekent eerlijk en respectvol zijn in elke situatie, zowel binnen als buiten de lijnen van het voetbalveld.</p>
+
+      <div class="pillar-card">
+        <div class="pillar-number">02</div>
+        <h3>Professionele Transparantie</h3>
+        <p>Als FIFA-makelaar bescherm ik de belangen van jonge talenten. Geen loze beloften, maar een transparant, strategisch en eerlijk carrièrepad richting het profvoetbal.</p>
       </div>
-      <div class="value-card">
-        <h3>Teamwork</h3>
-        <p>Teamwork leert jonge atleten dat niemand alleen kampioen wordt. Samenwerken en elkaar versterken is de sleutel tot grotere prestaties.</p>
+
+      <div class="pillar-card">
+        <div class="pillar-number">03</div>
+        <h3>Maatschappelijke Impact</h3>
+        <p>Succes stopt niet bij de lijnen van het veld. Via sport en mentorschap bouwen we aan een sterke gemeenschap en bieden we kansen aan jongeren in Breda en daarbuiten.</p>
       </div>
+
     </div>
   </div>
 </section>
 
-<div class="cta-section">
-  <div class="cta-inner">
-    <h2>Bouwer van Toekomsten</h2>
-    <p>
-      Hassan Lammou is meer dan een voetbalcoach of een FIFA-makelaar. Hij is een mentor, een leider en een bouwer van toekomsten. Als u op zoek bent naar iemand die jeugdontwikkeling, spelersvertegenwoordiging en de echte kracht van voetbal begrijpt, dan is Hassan Lammou de naam die u moet kennen.
-    </p>
-    <a href="contact.html" class="cta-btn">Neem contact op</a>
+<section class="cta-section">
+  <div class="section-inner">
+    <h2>Samen Jouw Doelen Bereiken?</h2>
+    <p>Of je nu op zoek bent naar professionele coaching, mentorschap voor jonge talenten of gecertificeerde spelersvertegenwoordiging: laten we de mogelijkheden bespreken.</p>
+    <a href="contact.html" class="cta-btn">Neem Contact Op</a>
   </div>
-</div>
+</section>
 
 <footer>
   <div class="footer-inner">
@@ -439,51 +383,18 @@
       <div class="footer-social">
         <h4>Volg Hassan Lammou</h4>
         <div class="social-grid">
-
           <a href="https://nl.linkedin.com/in/hassan-lammou-433406238" target="_blank" class="social-link" title="LinkedIn">
-            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           </a>
-
           <a href="https://www.instagram.com/heshes076/" target="_blank" class="social-link" title="Instagram">
             <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
           </a>
-
           <a href="https://x.com/hassanlammou" target="_blank" class="social-link" title="X (Twitter)">
             <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
           </a>
-
-          <a href="https://nl-nl.facebook.com/hassan.lamou.98/" target="_blank" class="social-link" title="Facebook">
-            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          </a>
-
           <a href="https://www.youtube.com/@hassanlammou" target="_blank" class="social-link" title="YouTube">
-            <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93-.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
           </a>
-
-          <a href="https://www.reddit.com/user/hassanlammou/" target="_blank" class="social-link" title="Reddit">
-            <svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
-          </a>
-
-          <a href="https://nl.pinterest.com/hassanlammouofficial/" target="_blank" class="social-link" title="Pinterest">
-            <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
-          </a>
-
-          <a href="https://soundcloud.com/hassanlammou" target="_blank" class="social-link" title="SoundCloud">
-            <svg viewBox="0 0 24 24"><path d="M1.175 12.225c-.015 0-.023.01-.023.024l-.135 1.073.135 1.072c0 .015.008.023.023.023.014 0 .023-.008.023-.023l.151-1.072-.151-1.073c0-.014-.009-.024-.023-.024zm-.67.405c-.014 0-.023.009-.023.024L.36 13.322l.12.668c0 .015.01.024.024.024.015 0 .024-.009.024-.024l.136-.668-.136-.668c0-.015-.009-.024-.024-.024zm1.348-.232c-.015 0-.025.01-.025.024l-.12 1.1.12 1.099c0 .015.01.024.025.024.014 0 .024-.009.024-.024l.135-1.1-.135-1.099c0-.015-.01-.024-.024-.024zm.669-.102c-.015 0-.025.009-.025.024l-.104 1.202.104 1.202c0 .015.01.024.025.024.014 0 .024-.009.024-.024l.12-1.202-.12-1.202c0-.015-.01-.024-.024-.024zM24 10.204c-.391-3.226-3.072-5.698-6.319-5.698-1.146 0-2.215.32-3.131.862-.343.21-.434.424-.44.601v11.127c.006.185.147.339.329.354H24V10.204z"/></svg>
-          </a>
-
-          <a href="https://podcasts.apple.com/nl/podcast/hassan-lammou-netherlands/id1826713459" target="_blank" class="social-link" title="Apple Podcasts">
-            <svg viewBox="0 0 24 24"><path d="M5.34 0A5.328 5.328 0 000 5.34v13.32A5.328 5.328 0 005.34 24h13.32A5.328 5.328 0 0024 18.66V5.34A5.328 5.328 0 0018.66 0zm6.525 2.568c2.336 0 4.448.902 6.056 2.587a8.612 8.612 0 012.287 5.922c0 1.979-.635 3.838-1.79 5.33a.282.282 0 01-.464-.316 7.856 7.856 0 001.427-4.577c0-4.26-3.354-7.785-7.585-7.949a7.818 7.818 0 00-8.023 7.8c0 1.689.519 3.27 1.464 4.578a.282.282 0 01-.464.315A8.593 8.593 0 013.99 11.07c0-4.77 3.84-8.502 7.875-8.502zm.037 2.55a5.998 5.998 0 015.93 5.994 5.96 5.96 0 01-1.184 3.59.282.282 0 01-.47-.309 5.392 5.392 0 001.008-3.237 5.404 5.404 0 00-5.405-5.405 5.404 5.404 0 00-5.405 5.405c0 1.18.376 2.27 1.008 3.172a.282.282 0 01-.47.308 5.96 5.96 0 01-1.184-3.48 5.998 5.998 0 015.172-5.994zm-.07 2.79a3.21 3.21 0 013.207 3.207 3.185 3.185 0 01-.966 2.275.282.282 0 01-.4-.398 2.62 2.62 0 00.72-1.877 2.56 2.56 0 00-2.56-2.56 2.56 2.56 0 00-2.56 2.56c0 .72.296 1.374.773 1.848a.282.282 0 01-.398.4 3.185 3.185 0 01-.922-2.248 3.21 3.21 0 013.106-3.207zm.02 2.344a.868.868 0 01.868.868.868.868 0 01-.868.868.868.868 0 01-.869-.868.868.868 0 01.869-.868zm-.02 2.173c.595 0 1.08.484 1.08 1.08v3.595a1.08 1.08 0 01-1.08 1.08 1.08 1.08 0 01-1.08-1.08v-3.594c0-.596.484-1.081 1.08-1.081z"/></svg>
-          </a>
-
-          <a href="https://vimeo.com/hassanlammou" target="_blank" class="social-link" title="Vimeo">
-            <svg viewBox="0 0 24 24"><path d="M23.977 6.416c-.105 2.338-1.739 5.543-4.894 9.609-3.268 4.247-6.026 6.37-8.29 6.37-1.409 0-2.578-1.294-3.553-3.881L5.322 11.4C4.603 8.816 3.834 7.522 3.01 7.522c-.179 0-.806.378-1.881 1.132L0 7.197a315.065 315.065 0 003.501-3.128C5.08 2.701 6.266 1.984 7.055 1.91c1.867-.18 3.016 1.1 3.447 3.838.465 2.953.789 4.789.971 5.507.539 2.45 1.131 3.674 1.776 3.674.502 0 1.256-.796 2.265-2.385 1.004-1.589 1.54-2.797 1.612-3.628.144-1.371-.395-2.061-1.612-2.061-.574 0-1.167.121-1.777.391 1.186-3.868 3.434-5.757 6.762-5.637 2.473.06 3.628 1.664 3.478 4.807z"/></svg>
-          </a>
-
-          <a href="https://www.slideshare.net/hassanlammouofficial" target="_blank" class="social-link" title="SlideShare">
-            <svg viewBox="0 0 24 24"><path d="M22.093 16.517a5.507 5.507 0 01-2.04 1.476c.234.343.373.756.373 1.203 0 1.162-.943 2.105-2.106 2.105-1.163 0-2.105-.943-2.105-2.105 0-.268.051-.525.141-.76a8.034 8.034 0 01-4.712 0 2.085 2.085 0 01.14.76c0 1.162-.942 2.105-2.105 2.105-1.162 0-2.105-.943-2.105-2.105 0-.447.14-.86.373-1.203a5.507 5.507 0 01-2.04-1.476c-.88-1.054-1.15-2.358-1.15-3.586V9.388c0-3.73 2.84-6.753 6.34-6.753h4.707c3.5 0 6.341 3.023 6.341 6.753v3.543c0 1.228-.272 2.532-1.152 3.586zM12 1.5C6.477 1.5 2 5.977 2 11.5S6.477 21.5 12 21.5 22 17.023 22 11.5 17.523 1.5 12 1.5z"/></svg>
-          </a>
-
         </div>
       </div>
     </div>
